@@ -27,4 +27,9 @@ public class HtmlToPdfConverterController: ControllerBase
         doc.Close();
         return pdfbytes;
     }
+
+    [HttpGet]
+    public string GetMessage(){
+        return "Hello World!";
+    }
 }
